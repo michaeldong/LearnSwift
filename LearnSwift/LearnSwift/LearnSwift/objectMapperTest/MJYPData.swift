@@ -53,7 +53,7 @@ public struct MJYPData: Mappable {
   /// Map a JSON object to this class using ObjectMapper.
   ///
   /// - parameter map: A mapping from ObjectMapper.
-    public mutating func mapping(map: Map) {
+  public mutating func mapping(map: Map) {
     shareUrl <- map[SerializationKeys.shareUrl]
     ctime <- map[SerializationKeys.ctime]
     favor <- map[SerializationKeys.favor]

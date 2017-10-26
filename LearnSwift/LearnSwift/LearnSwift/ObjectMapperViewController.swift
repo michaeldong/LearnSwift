@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import ObjectMapper
 
 class ObjectMapperViewController: UIViewController {
 
@@ -14,6 +15,28 @@ class ObjectMapperViewController: UIViewController {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
+        
+        
+        if let path = Bundle.main.path(forResource: "objectMapper", ofType: "json") {
+            do {
+                let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe)
+//                let jsonResult = try JSONSerialization.jsonObject(with: data, options: .mutableLeaves)
+                let jsonStr  = NSString(data: data, encoding: String.Encoding.utf8.rawValue)
+                if let jsonStr = jsonStr {
+//                    let mjypObj = MJYPMappable(JSONString:jsonStr as String)
+                    let mjypObj = Mapper<MJYPMappable>().map(JSONString: jsonStr as String)
+                  //  print(mjypObj as Any)
+                    print(mjypObj?.code!)
+                }
+               
+            } catch {
+                // handle error
+            }
+        }
+        
+        
+        
+       
     }
 
     override func didReceiveMemoryWarning() {
