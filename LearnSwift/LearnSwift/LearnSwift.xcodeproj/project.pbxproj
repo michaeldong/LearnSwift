@@ -24,7 +24,7 @@
 		F5033D191FA1F62900124A73 /* MJYPResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5033D131FA1F62800124A73 /* MJYPResult.swift */; };
 		F5033D1A1FA1F62900124A73 /* MJYPGetList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5033D141FA1F62800124A73 /* MJYPGetList.swift */; };
 		F5033D1B1FA1F62900124A73 /* MJYPMappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5033D151FA1F62800124A73 /* MJYPMappable.swift */; };
-		F5033D1C1FA1F62900124A73 /* MJYPShopdata.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5033D161FA1F62900124A73 /* MJYPShopdata.swift */; };
+		F5033D1C1FA1F62900124A73 /* MJYPDatas.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5033D161FA1F62900124A73 /* MJYPDatas.swift */; };
 		F5033D1D1FA1F62900124A73 /* MJYPTop.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5033D171FA1F62900124A73 /* MJYPTop.swift */; };
 /* End PBXBuildFile section */
 
@@ -71,7 +71,7 @@
 		F5033D131FA1F62800124A73 /* MJYPResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MJYPResult.swift; sourceTree = "<group>"; };
 		F5033D141FA1F62800124A73 /* MJYPGetList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MJYPGetList.swift; sourceTree = "<group>"; };
 		F5033D151FA1F62800124A73 /* MJYPMappable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MJYPMappable.swift; sourceTree = "<group>"; };
-		F5033D161FA1F62900124A73 /* MJYPShopdata.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MJYPShopdata.swift; sourceTree = "<group>"; };
+		F5033D161FA1F62900124A73 /* MJYPDatas.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MJYPDatas.swift; sourceTree = "<group>"; };
 		F5033D171FA1F62900124A73 /* MJYPTop.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MJYPTop.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -181,7 +181,7 @@
 				F5033D141FA1F62800124A73 /* MJYPGetList.swift */,
 				F5033D151FA1F62800124A73 /* MJYPMappable.swift */,
 				F5033D131FA1F62800124A73 /* MJYPResult.swift */,
-				F5033D161FA1F62900124A73 /* MJYPShopdata.swift */,
+				F5033D161FA1F62900124A73 /* MJYPDatas.swift */,
 				F5033D171FA1F62900124A73 /* MJYPTop.swift */,
 				F5033D0E1FA1F1B500124A73 /* MJYPData.json */,
 				F5033D101FA1F29200124A73 /* getList.json */,
@@ -385,7 +385,7 @@
 				F5033CBC1FA1D1ED00124A73 /* ViewController.swift in Sources */,
 				F5033D1D1FA1F62900124A73 /* MJYPTop.swift in Sources */,
 				F5033CBA1FA1D1ED00124A73 /* AppDelegate.swift in Sources */,
-				F5033D1C1FA1F62900124A73 /* MJYPShopdata.swift in Sources */,
+				F5033D1C1FA1F62900124A73 /* MJYPDatas.swift in Sources */,
 				F5033D181FA1F62900124A73 /* MJYPData.swift in Sources */,
 				F5033D1B1FA1F62900124A73 /* MJYPMappable.swift in Sources */,
 			);

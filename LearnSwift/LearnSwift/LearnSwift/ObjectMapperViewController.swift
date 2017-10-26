@@ -16,6 +16,7 @@ class ObjectMapperViewController: UIViewController {
         
         // Do any additional setup after loading the view.
         
+        var mjyp : MJYPMappable?
         
         if let path = Bundle.main.path(forResource: "objectMapper", ofType: "json") {
             do {
@@ -27,6 +28,7 @@ class ObjectMapperViewController: UIViewController {
                     let mjypObj = Mapper<MJYPMappable>().map(JSONString: jsonStr as String)
                   //  print(mjypObj as Any)
                     print(mjypObj?.code!)
+                    mjyp = mjypObj
                 }
                
             } catch {
@@ -34,6 +36,7 @@ class ObjectMapperViewController: UIViewController {
             }
         }
         
+        print(mjyp)
         
         
        

@@ -13,14 +13,14 @@ public struct MJYPGetList: Mappable {
   // MARK: Declaration for string constants to be used to decode and also serialize.
   private struct SerializationKeys {
     static let descriptionValue = "description"
-    static let shopdata = "shopdata"
+    static let shopdata = "data"
     static let message = "message"
     static let code = "code"
   }
 
   // MARK: Properties
   public var descriptionValue: String?
-  public var shopdata: MJYPShopdata?
+  public var shopdata: MJYPDatas?
   public var message: String?
   public var code: Int?
 
