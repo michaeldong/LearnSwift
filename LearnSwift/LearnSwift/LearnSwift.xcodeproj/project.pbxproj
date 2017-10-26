@@ -17,6 +17,11 @@
 		F5033CDA1FA1D1ED00124A73 /* LearnSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5033CD91FA1D1ED00124A73 /* LearnSwiftUITests.swift */; };
 		F5033CE81FA1D2A900124A73 /* SwiftJSONViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5033CE71FA1D2A900124A73 /* SwiftJSONViewController.swift */; };
 		F5033CEA1FA1E33A00124A73 /* ObjectMapperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5033CE91FA1E33A00124A73 /* ObjectMapperViewController.swift */; };
+		F5033CF11FA1E66800124A73 /* MJYPData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5033CEC1FA1E66800124A73 /* MJYPData.swift */; };
+		F5033CF21FA1E66800124A73 /* MJYPResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5033CED1FA1E66800124A73 /* MJYPResult.swift */; };
+		F5033CF31FA1E66800124A73 /* MJYPGetList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5033CEE1FA1E66800124A73 /* MJYPGetList.swift */; };
+		F5033CF41FA1E66800124A73 /* MJYPMappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5033CEF1FA1E66800124A73 /* MJYPMappable.swift */; };
+		F5033CF51FA1E66800124A73 /* MJYPTop.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5033CF01FA1E66800124A73 /* MJYPTop.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +60,11 @@
 		F5033CDB1FA1D1ED00124A73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F5033CE71FA1D2A900124A73 /* SwiftJSONViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftJSONViewController.swift; sourceTree = "<group>"; };
 		F5033CE91FA1E33A00124A73 /* ObjectMapperViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectMapperViewController.swift; sourceTree = "<group>"; };
+		F5033CEC1FA1E66800124A73 /* MJYPData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MJYPData.swift; sourceTree = "<group>"; };
+		F5033CED1FA1E66800124A73 /* MJYPResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MJYPResult.swift; sourceTree = "<group>"; };
+		F5033CEE1FA1E66800124A73 /* MJYPGetList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MJYPGetList.swift; sourceTree = "<group>"; };
+		F5033CEF1FA1E66800124A73 /* MJYPMappable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MJYPMappable.swift; sourceTree = "<group>"; };
+		F5033CF01FA1E66800124A73 /* MJYPTop.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MJYPTop.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +135,7 @@
 		F5033CB81FA1D1ED00124A73 /* LearnSwift */ = {
 			isa = PBXGroup;
 			children = (
+				F5033CEB1FA1E65700124A73 /* objectMapperTest */,
 				F5033CB91FA1D1ED00124A73 /* AppDelegate.swift */,
 				F5033CBB1FA1D1ED00124A73 /* ViewController.swift */,
 				F5033CBD1FA1D1ED00124A73 /* Main.storyboard */,
@@ -153,6 +164,18 @@
 				F5033CDB1FA1D1ED00124A73 /* Info.plist */,
 			);
 			path = LearnSwiftUITests;
+			sourceTree = "<group>";
+		};
+		F5033CEB1FA1E65700124A73 /* objectMapperTest */ = {
+			isa = PBXGroup;
+			children = (
+				F5033CEC1FA1E66800124A73 /* MJYPData.swift */,
+				F5033CEE1FA1E66800124A73 /* MJYPGetList.swift */,
+				F5033CEF1FA1E66800124A73 /* MJYPMappable.swift */,
+				F5033CED1FA1E66800124A73 /* MJYPResult.swift */,
+				F5033CF01FA1E66800124A73 /* MJYPTop.swift */,
+			);
+			path = objectMapperTest;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -341,9 +364,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				F5033CEA1FA1E33A00124A73 /* ObjectMapperViewController.swift in Sources */,
+				F5033CF31FA1E66800124A73 /* MJYPGetList.swift in Sources */,
 				F5033CE81FA1D2A900124A73 /* SwiftJSONViewController.swift in Sources */,
+				F5033CF21FA1E66800124A73 /* MJYPResult.swift in Sources */,
 				F5033CBC1FA1D1ED00124A73 /* ViewController.swift in Sources */,
+				F5033CF51FA1E66800124A73 /* MJYPTop.swift in Sources */,
 				F5033CBA1FA1D1ED00124A73 /* AppDelegate.swift in Sources */,
+				F5033CF11FA1E66800124A73 /* MJYPData.swift in Sources */,
+				F5033CF41FA1E66800124A73 /* MJYPMappable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
