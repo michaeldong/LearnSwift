@@ -8,10 +8,11 @@
 
 import UIKit
 import Alamofire
+import ObjectMapper
 
 class YPTasteViewController: UIViewController  {
     var goodsTableView : UITableView?
-    var goodsData = NSMutableArray()
+    var goodsData:[MJYPData]?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,7 +27,7 @@ class YPTasteViewController: UIViewController  {
         self.view.addSubview(self.goodsTableView!)
         
         //开启自动计算高度
-        goodsTableView?.estimatedRowHeight = 44//预估高度，随便设置
+        goodsTableView?.estimatedRowHeight = 260//预估高度，随便设置
         goodsTableView?.rowHeight = UITableViewAutomaticDimension
         
         fetchData()
@@ -39,19 +40,26 @@ class YPTasteViewController: UIViewController  {
     
     func fetchData() {
 //        goodsData.add("michael")
+        let  parameters: Parameters = [
+            "GetList": [
+                "model":"Article",
+                "action":"GetList",
+                "parameters": [
+                    "psize":20,
+                    "list": "pinwei",
+                    "pindex": 0
+                ]
+            ]
+        ]
         
-//MARK-- todo parser json response
-        Alamofire.request("https://httpbin.org/get").responseJSON { response in
+        Alamofire.request("https://shopapi.io.mi.com/app/shopv3/pipe", method: .post, parameters: parameters, encoding: JSONEncoding(options: [])).responseJSON { response in
             print("Request: \(String(describing: response.request))")   // original url request
             print("Response: \(String(describing: response.response))") // http url response
-            print("Result: \(response.result)")                         // response serialization result
-            
             if let json = response.result.value {
                 print("JSON: \(json)") // serialized json response
-            }
-            
-            if let data = response.data, let utf8Text = String(data: data, encoding: .utf8) {
-                print("Data: \(utf8Text)") // original server data as UTF8 string
+                let goodsTasteJson : MJYPMappable = Mapper<MJYPMappable>().map(JSON: json as! [String : Any])!
+                self.goodsData = goodsTasteJson.result?.getList?.data?.data
+                self.goodsTableView?.reloadData()
             }
         }
     }
@@ -64,13 +72,24 @@ extension YPTasteViewController : UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return goodsData.count
+        if let goodsData = goodsData {
+//            return goodsData.count
+            return 2
+        }
+        return 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell:YPTasteTableViewCell = self.goodsTableView!.dequeueReusableCell(withIdentifier: "tastecell") as! YPTasteTableViewCell
-        
-        cell.titleLabel.text = (goodsData[indexPath.row] as! String)
+        if let goodsData = goodsData {
+            let mjypData = goodsData[indexPath.row]
+            cell.titleLabel.text = mjypData.title
+            cell.subtitleLabel.text = mjypData.subtitle
+            if let picUrl = mjypData.picUrl {
+                let url = URL(string: picUrl)
+                cell.goodsImageView.kf.setImage(with: url)
+            }
+        }
         
         return cell
     }

@@ -20,7 +20,7 @@ public struct MJYPGetList: Mappable {
 
   // MARK: Properties
   public var descriptionValue: String?
-  public var shopdata: MJYPDatas?
+  public var data: MJYPDatas?
   public var message: String?
   public var code: Int?
 
@@ -37,7 +37,7 @@ public struct MJYPGetList: Mappable {
   /// - parameter map: A mapping from ObjectMapper.
   public mutating func mapping(map: Map) {
     descriptionValue <- map[SerializationKeys.descriptionValue]
-    shopdata <- map[SerializationKeys.shopdata]
+    data <- map[SerializationKeys.shopdata]
     message <- map[SerializationKeys.message]
     code <- map[SerializationKeys.code]
   }
@@ -48,7 +48,7 @@ public struct MJYPGetList: Mappable {
   public func dictionaryRepresentation() -> [String: Any] {
     var dictionary: [String: Any] = [:]
     if let value = descriptionValue { dictionary[SerializationKeys.descriptionValue] = value }
-    if let value = shopdata { dictionary[SerializationKeys.shopdata] = value.dictionaryRepresentation() }
+    if let value = data { dictionary[SerializationKeys.shopdata] = value.dictionaryRepresentation() }
     if let value = message { dictionary[SerializationKeys.message] = value }
     if let value = code { dictionary[SerializationKeys.code] = value }
     return dictionary
