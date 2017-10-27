@@ -15,11 +15,19 @@ class YPTasteViewController: UIViewController  {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.goodsTableView = UITableView(frame: CGRect(x:0,y:0,width:UIScreen.main.bounds.width,height:UIScreen.main.bounds.height))
-        self.goodsTableView?.delegate = self
-        self.goodsTableView?.dataSource = self
-        self.goodsTableView?.register(YPTasteTableViewCell.self, forCellReuseIdentifier: "tastecell")
+        goodsTableView = UITableView(frame: CGRect(x:0,
+                                                   y:0,
+                                                   width:UIScreen.main.bounds.width,
+                                                   height:UIScreen.main.bounds.height))
+        goodsTableView?.delegate = self
+        goodsTableView?.dataSource = self
+        goodsTableView?.register(YPTasteTableViewCell.self, forCellReuseIdentifier: "tastecell")
         self.view.addSubview(self.goodsTableView!)
+        
+        //开启自动计算高度
+        goodsTableView?.estimatedRowHeight = 44//预估高度，随便设置
+        goodsTableView?.rowHeight = UITableViewAutomaticDimension
+        
         fetchData()
     }
 
@@ -47,7 +55,7 @@ extension YPTasteViewController : UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell:YPTasteTableViewCell = self.goodsTableView!.dequeueReusableCell(withIdentifier: "tastecell") as! YPTasteTableViewCell
         
-        cell.titleLabel?.text = (goodsData[indexPath.row] as! String)
+        cell.titleLabel.text = (goodsData[indexPath.row] as! String)
         
         return cell
     }
