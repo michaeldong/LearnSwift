@@ -8,4 +8,5 @@ target 'LearnSwift' do
 	pod 'ObjectMapper', '~> 2.2'
     pod 'SnapKit', '~> 4.0.0'
 	pod 'Kingfisher', '~> 4.0'
+    pod 'Alamofire', '~> 4.5'
 end
