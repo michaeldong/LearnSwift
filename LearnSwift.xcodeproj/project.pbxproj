@@ -27,7 +27,7 @@
 		F5F0744D1FA2C58E00088E23 /* MJYPData.json in Resources */ = {isa = PBXBuildFile; fileRef = F5F0744A1FA2C58E00088E23 /* MJYPData.json */; };
 		F5F0744E1FA2C58E00088E23 /* objectMapper.json in Resources */ = {isa = PBXBuildFile; fileRef = F5F0744B1FA2C58E00088E23 /* objectMapper.json */; };
 		F5F074501FA2CBFA00088E23 /* YPTasteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F0744F1FA2CBFA00088E23 /* YPTasteViewController.swift */; };
-		F5F074531FA2CDF400088E23 /* YPTasteCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F074521FA2CDF400088E23 /* YPTasteCollectionViewCell.swift */; };
+		F5F074531FA2CDF400088E23 /* YPTasteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F074521FA2CDF400088E23 /* YPTasteTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,7 +76,7 @@
 		F5F0744A1FA2C58E00088E23 /* MJYPData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MJYPData.json; sourceTree = "<group>"; };
 		F5F0744B1FA2C58E00088E23 /* objectMapper.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = objectMapper.json; sourceTree = "<group>"; };
 		F5F0744F1FA2CBFA00088E23 /* YPTasteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YPTasteViewController.swift; sourceTree = "<group>"; };
-		F5F074521FA2CDF400088E23 /* YPTasteCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YPTasteCollectionViewCell.swift; sourceTree = "<group>"; };
+		F5F074521FA2CDF400088E23 /* YPTasteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YPTasteTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -215,7 +215,7 @@
 		F5F074511FA2CDCB00088E23 /* view */ = {
 			isa = PBXGroup;
 			children = (
-				F5F074521FA2CDF400088E23 /* YPTasteCollectionViewCell.swift */,
+				F5F074521FA2CDF400088E23 /* YPTasteTableViewCell.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -415,7 +415,7 @@
 				F5F074461FA2C4E700088E23 /* SwiftJSONViewController.swift in Sources */,
 				F5F074501FA2CBFA00088E23 /* YPTasteViewController.swift in Sources */,
 				F5F074411FA2C4CC00088E23 /* MJYPTop.swift in Sources */,
-				F5F074531FA2CDF400088E23 /* YPTasteCollectionViewCell.swift in Sources */,
+				F5F074531FA2CDF400088E23 /* YPTasteTableViewCell.swift in Sources */,
 				F5F0743E1FA2C4CC00088E23 /* MJYPDatas.swift in Sources */,
 				F5033CBA1FA1D1ED00124A73 /* AppDelegate.swift in Sources */,
 				F5F0743A1FA2C4CC00088E23 /* MJYPData.swift in Sources */,

@@ -8,19 +8,22 @@
 
 import UIKit
 
-class YPTasteCollectionViewCell: UICollectionViewCell {
+class YPTasteTableViewCell: UITableViewCell {
     let width = UIScreen.main.bounds.size.width
+    let height = UIScreen.main.bounds.size.height
     var titleLabel:UILabel?
     
-    override init(frame: CGRect) {
-        super.init(frame: frame)
+    override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
+        super.init(style: style, reuseIdentifier: reuseIdentifier)
+        titleLabel?.text = nil
         constructionView()
     }
+    
     required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+        fatalError()
     }
     func constructionView() {
-        titleLabel = UILabel(frame: CGRect(x: 5, y: 5, width: (width-40)/2, height: 50))
+        titleLabel = UILabel(frame: CGRect(x: 0, y: 0, width: width, height: 100))
         self.addSubview(titleLabel!)
     }
 }
