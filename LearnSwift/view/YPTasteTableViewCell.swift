@@ -8,6 +8,7 @@
 
 import UIKit
 import SnapKit
+import Kingfisher
 
 //https://shop.io.mi-img.com/app/shop/img?id=shop_1a1ca1bececf3720a22359575e9c217f.jpeg
 
@@ -38,7 +39,9 @@ class YPTasteTableViewCell: UITableViewCell {
     
         // add imageview
         self.contentView.addSubview(goodsImageView)
-        goodsImageView.image = UIImage(named:"img.jpeg")
+        let url = URL(string: "https://shop.io.mi-img.com/app/shop/img?id=shop_1a1ca1bececf3720a22359575e9c217f.jpeg")
+        goodsImageView.kf.setImage(with: url)
+//        goodsImageView.image = UIImage(named:"img.jpeg")
         goodsImageView.contentMode = .scaleToFill
         goodsImageView.clipsToBounds = true
         goodsImageView.snp.makeConstraints { (make) in

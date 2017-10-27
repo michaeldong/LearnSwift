@@ -38,7 +38,6 @@ class YPTasteViewController: UIViewController  {
     
     func fetchData() {
         goodsData.add("michael")
-        goodsData.add("xing")
     }
 }
 
