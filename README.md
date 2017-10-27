@@ -1,10 +1,8 @@
-# LearnSwift
+# Swift Demo 
 
-Description 
+1. git clone the project 
 
-Add support JSON convert to Object by use ObjectMapper
-refer: https://github.com/Hearst-DD/ObjectMapper
+2. pod install 
 
-How to Install 
-
-pod install 
+3. You need change ObjectMapper to swift 3. 
+![enter image description here](https://ws4.sinaimg.cn/large/006tKfTcly1fkwtwhr6coj314g0bfack.jpg)
