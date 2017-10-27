@@ -14,11 +14,8 @@
 		F5033CC41FA1D1ED00124A73 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5033CC21FA1D1ED00124A73 /* LaunchScreen.storyboard */; };
 		F5033CCF1FA1D1ED00124A73 /* LearnSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5033CCE1FA1D1ED00124A73 /* LearnSwiftTests.swift */; };
 		F5033CDA1FA1D1ED00124A73 /* LearnSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5033CD91FA1D1ED00124A73 /* LearnSwiftUITests.swift */; };
-		F5F074391FA2C4CC00088E23 /* getList.json in Resources */ = {isa = PBXBuildFile; fileRef = F5F074301FA2C4CC00088E23 /* getList.json */; };
 		F5F0743A1FA2C4CC00088E23 /* MJYPData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F074311FA2C4CC00088E23 /* MJYPData.swift */; };
-		F5F0743B1FA2C4CC00088E23 /* MJYPData.json in Resources */ = {isa = PBXBuildFile; fileRef = F5F074321FA2C4CC00088E23 /* MJYPData.json */; };
 		F5F0743C1FA2C4CC00088E23 /* MJYPMappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F074331FA2C4CC00088E23 /* MJYPMappable.swift */; };
-		F5F0743D1FA2C4CC00088E23 /* objectMapper.json in Resources */ = {isa = PBXBuildFile; fileRef = F5F074341FA2C4CC00088E23 /* objectMapper.json */; };
 		F5F0743E1FA2C4CC00088E23 /* MJYPDatas.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F074351FA2C4CC00088E23 /* MJYPDatas.swift */; };
 		F5F0743F1FA2C4CC00088E23 /* MJYPResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F074361FA2C4CC00088E23 /* MJYPResult.swift */; };
 		F5F074401FA2C4CC00088E23 /* MJYPGetList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F074371FA2C4CC00088E23 /* MJYPGetList.swift */; };
@@ -26,6 +23,9 @@
 		F5F074451FA2C4E700088E23 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F074421FA2C4E700088E23 /* ViewController.swift */; };
 		F5F074461FA2C4E700088E23 /* SwiftJSONViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F074431FA2C4E700088E23 /* SwiftJSONViewController.swift */; };
 		F5F074471FA2C4E700088E23 /* ObjectMapperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F074441FA2C4E700088E23 /* ObjectMapperViewController.swift */; };
+		F5F0744C1FA2C58E00088E23 /* getList.json in Resources */ = {isa = PBXBuildFile; fileRef = F5F074491FA2C58E00088E23 /* getList.json */; };
+		F5F0744D1FA2C58E00088E23 /* MJYPData.json in Resources */ = {isa = PBXBuildFile; fileRef = F5F0744A1FA2C58E00088E23 /* MJYPData.json */; };
+		F5F0744E1FA2C58E00088E23 /* objectMapper.json in Resources */ = {isa = PBXBuildFile; fileRef = F5F0744B1FA2C58E00088E23 /* objectMapper.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,11 +61,8 @@
 		F5033CD51FA1D1ED00124A73 /* LearnSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LearnSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5033CD91FA1D1ED00124A73 /* LearnSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnSwiftUITests.swift; sourceTree = "<group>"; };
 		F5033CDB1FA1D1ED00124A73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F5F074301FA2C4CC00088E23 /* getList.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = getList.json; sourceTree = "<group>"; };
 		F5F074311FA2C4CC00088E23 /* MJYPData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MJYPData.swift; sourceTree = "<group>"; };
-		F5F074321FA2C4CC00088E23 /* MJYPData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MJYPData.json; sourceTree = "<group>"; };
 		F5F074331FA2C4CC00088E23 /* MJYPMappable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MJYPMappable.swift; sourceTree = "<group>"; };
-		F5F074341FA2C4CC00088E23 /* objectMapper.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = objectMapper.json; sourceTree = "<group>"; };
 		F5F074351FA2C4CC00088E23 /* MJYPDatas.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MJYPDatas.swift; sourceTree = "<group>"; };
 		F5F074361FA2C4CC00088E23 /* MJYPResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MJYPResult.swift; sourceTree = "<group>"; };
 		F5F074371FA2C4CC00088E23 /* MJYPGetList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MJYPGetList.swift; sourceTree = "<group>"; };
@@ -73,6 +70,9 @@
 		F5F074421FA2C4E700088E23 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F5F074431FA2C4E700088E23 /* SwiftJSONViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftJSONViewController.swift; sourceTree = "<group>"; };
 		F5F074441FA2C4E700088E23 /* ObjectMapperViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObjectMapperViewController.swift; sourceTree = "<group>"; };
+		F5F074491FA2C58E00088E23 /* getList.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = getList.json; sourceTree = "<group>"; };
+		F5F0744A1FA2C58E00088E23 /* MJYPData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MJYPData.json; sourceTree = "<group>"; };
+		F5F0744B1FA2C58E00088E23 /* objectMapper.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = objectMapper.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,15 +175,13 @@
 		F5F0742E1FA2C4A300088E23 /* model */ = {
 			isa = PBXGroup;
 			children = (
-				F5F074301FA2C4CC00088E23 /* getList.json */,
-				F5F074321FA2C4CC00088E23 /* MJYPData.json */,
+				F5F074481FA2C58E00088E23 /* testData */,
 				F5F074311FA2C4CC00088E23 /* MJYPData.swift */,
 				F5F074351FA2C4CC00088E23 /* MJYPDatas.swift */,
 				F5F074371FA2C4CC00088E23 /* MJYPGetList.swift */,
 				F5F074331FA2C4CC00088E23 /* MJYPMappable.swift */,
 				F5F074361FA2C4CC00088E23 /* MJYPResult.swift */,
 				F5F074381FA2C4CC00088E23 /* MJYPTop.swift */,
-				F5F074341FA2C4CC00088E23 /* objectMapper.json */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -196,6 +194,16 @@
 				F5F074421FA2C4E700088E23 /* ViewController.swift */,
 			);
 			path = viewcontroller;
+			sourceTree = "<group>";
+		};
+		F5F074481FA2C58E00088E23 /* testData */ = {
+			isa = PBXGroup;
+			children = (
+				F5F074491FA2C58E00088E23 /* getList.json */,
+				F5F0744A1FA2C58E00088E23 /* MJYPData.json */,
+				F5F0744B1FA2C58E00088E23 /* objectMapper.json */,
+			);
+			path = testData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -308,10 +316,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F5F074391FA2C4CC00088E23 /* getList.json in Resources */,
-				F5F0743D1FA2C4CC00088E23 /* objectMapper.json in Resources */,
+				F5F0744C1FA2C58E00088E23 /* getList.json in Resources */,
+				F5F0744E1FA2C58E00088E23 /* objectMapper.json in Resources */,
 				F5033CC41FA1D1ED00124A73 /* LaunchScreen.storyboard in Resources */,
-				F5F0743B1FA2C4CC00088E23 /* MJYPData.json in Resources */,
+				F5F0744D1FA2C58E00088E23 /* MJYPData.json in Resources */,
 				F5033CC11FA1D1ED00124A73 /* Assets.xcassets in Resources */,
 				F5033CBF1FA1D1ED00124A73 /* Main.storyboard in Resources */,
 			);
