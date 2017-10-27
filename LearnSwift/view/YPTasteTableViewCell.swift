@@ -60,6 +60,6 @@ class YPTasteTableViewCell: UITableViewCell {
             make.bottom.equalTo(5)
         })
         subtitleLabel.textAlignment = .center
-        titleLabel.font = UIFont.systemFont(ofSize: 12)
+        subtitleLabel.font = UIFont.systemFont(ofSize: 12)
     }
 }

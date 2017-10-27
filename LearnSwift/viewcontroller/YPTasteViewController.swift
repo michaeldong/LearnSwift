@@ -73,8 +73,7 @@ extension YPTasteViewController : UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if let goodsData = goodsData {
-//            return goodsData.count
-            return 2
+            return goodsData.count
         }
         return 0
     }

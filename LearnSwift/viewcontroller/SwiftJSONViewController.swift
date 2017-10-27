@@ -14,7 +14,7 @@ class SwiftJSONViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        // not use. You can use ObjectMapper Instead
     }
 
     override func didReceiveMemoryWarning() {
