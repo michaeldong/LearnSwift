@@ -12,7 +12,7 @@ import Kingfisher
 
 //https://shop.io.mi-img.com/app/shop/img?id=shop_1a1ca1bececf3720a22359575e9c217f.jpeg
 
-class YPTasteTableViewCell: UITableViewCell {
+class YPTasteTableViewCell: YPTableViewBaseCell {
     
     lazy var titleLabel : UILabel = UILabel()
     lazy var subtitleLabel : UILabel = UILabel()
@@ -20,15 +20,13 @@ class YPTasteTableViewCell: UITableViewCell {
     
     override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
-        constructionView()
     }
     
     required init?(coder aDecoder: NSCoder) {
         fatalError()
     }
     
-   fileprivate func constructionView() {
-    
+    override func configure() {
         goodsImageView
         .addhere(toSuperView: self.contentView)
         .layout { (make) in

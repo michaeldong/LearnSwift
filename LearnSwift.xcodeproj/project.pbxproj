@@ -14,6 +14,8 @@
 		F5033CC41FA1D1ED00124A73 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5033CC21FA1D1ED00124A73 /* LaunchScreen.storyboard */; };
 		F5033CCF1FA1D1ED00124A73 /* LearnSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5033CCE1FA1D1ED00124A73 /* LearnSwiftTests.swift */; };
 		F5033CDA1FA1D1ED00124A73 /* LearnSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5033CD91FA1D1ED00124A73 /* LearnSwiftUITests.swift */; };
+		F5B0CA7E1FA6D5C800625105 /* YPUITableViewBaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B0CA7B1FA6D5C800625105 /* YPUITableViewBaseCell.swift */; };
+		F5B0CA7F1FA6D5C800625105 /* YPUIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B0CA7D1FA6D5C800625105 /* YPUIViewExtension.swift */; };
 		F5F0743A1FA2C4CC00088E23 /* MJYPData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F074311FA2C4CC00088E23 /* MJYPData.swift */; };
 		F5F0743C1FA2C4CC00088E23 /* MJYPMappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F074331FA2C4CC00088E23 /* MJYPMappable.swift */; };
 		F5F0743E1FA2C4CC00088E23 /* MJYPDatas.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F074351FA2C4CC00088E23 /* MJYPDatas.swift */; };
@@ -29,7 +31,6 @@
 		F5F074501FA2CBFA00088E23 /* YPTasteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F0744F1FA2CBFA00088E23 /* YPTasteViewController.swift */; };
 		F5F074531FA2CDF400088E23 /* YPTasteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F074521FA2CDF400088E23 /* YPTasteTableViewCell.swift */; };
 		F5F074561FA2E0BC00088E23 /* img.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = F5F074551FA2E0BC00088E23 /* img.jpeg */; };
-		F5F074581FA6C21A00088E23 /* YPUIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F074571FA6C21A00088E23 /* YPUIViewExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,8 @@
 		F5033CD51FA1D1ED00124A73 /* LearnSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LearnSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5033CD91FA1D1ED00124A73 /* LearnSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnSwiftUITests.swift; sourceTree = "<group>"; };
 		F5033CDB1FA1D1ED00124A73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5B0CA7B1FA6D5C800625105 /* YPUITableViewBaseCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YPUITableViewBaseCell.swift; sourceTree = "<group>"; };
+		F5B0CA7D1FA6D5C800625105 /* YPUIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YPUIViewExtension.swift; sourceTree = "<group>"; };
 		F5F074311FA2C4CC00088E23 /* MJYPData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MJYPData.swift; sourceTree = "<group>"; };
 		F5F074331FA2C4CC00088E23 /* MJYPMappable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MJYPMappable.swift; sourceTree = "<group>"; };
 		F5F074351FA2C4CC00088E23 /* MJYPDatas.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MJYPDatas.swift; sourceTree = "<group>"; };
@@ -80,7 +83,6 @@
 		F5F0744F1FA2CBFA00088E23 /* YPTasteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YPTasteViewController.swift; sourceTree = "<group>"; };
 		F5F074521FA2CDF400088E23 /* YPTasteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YPTasteTableViewCell.swift; sourceTree = "<group>"; };
 		F5F074551FA2E0BC00088E23 /* img.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = img.jpeg; sourceTree = "<group>"; };
-		F5F074571FA6C21A00088E23 /* YPUIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YPUIViewExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,7 +153,7 @@
 		F5033CB81FA1D1ED00124A73 /* LearnSwift */ = {
 			isa = PBXGroup;
 			children = (
-				F56862541FA6C180003EA3FA /* extension */,
+				F5B0CA791FA6D5C800625105 /* YPView */,
 				F5F074511FA2CDCB00088E23 /* view */,
 				F5F0742E1FA2C4A300088E23 /* model */,
 				F5F0742F1FA2C4A300088E23 /* viewcontroller */,
@@ -182,10 +184,27 @@
 			path = LearnSwiftUITests;
 			sourceTree = "<group>";
 		};
-		F56862541FA6C180003EA3FA /* extension */ = {
+		F5B0CA791FA6D5C800625105 /* YPView */ = {
 			isa = PBXGroup;
 			children = (
-				F5F074571FA6C21A00088E23 /* YPUIViewExtension.swift */,
+				F5B0CA7A1FA6D5C800625105 /* class */,
+				F5B0CA7C1FA6D5C800625105 /* extension */,
+			);
+			path = YPView;
+			sourceTree = "<group>";
+		};
+		F5B0CA7A1FA6D5C800625105 /* class */ = {
+			isa = PBXGroup;
+			children = (
+				F5B0CA7B1FA6D5C800625105 /* YPUITableViewBaseCell.swift */,
+			);
+			path = class;
+			sourceTree = "<group>";
+		};
+		F5B0CA7C1FA6D5C800625105 /* extension */ = {
+			isa = PBXGroup;
+			children = (
+				F5B0CA7D1FA6D5C800625105 /* YPUIViewExtension.swift */,
 			);
 			path = extension;
 			sourceTree = "<group>";
@@ -307,6 +326,7 @@
 		F5033CAE1FA1D1ED00124A73 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = YP;
 				LastSwiftUpdateCheck = 0910;
 				LastUpgradeCheck = 0910;
 				ORGANIZATIONNAME = michaelxing;
@@ -434,7 +454,7 @@
 				F5F074401FA2C4CC00088E23 /* MJYPGetList.swift in Sources */,
 				F5F074471FA2C4E700088E23 /* ObjectMapperViewController.swift in Sources */,
 				F5F0743F1FA2C4CC00088E23 /* MJYPResult.swift in Sources */,
-				F5F074581FA6C21A00088E23 /* YPUIViewExtension.swift in Sources */,
+				F5B0CA7F1FA6D5C800625105 /* YPUIViewExtension.swift in Sources */,
 				F5F074451FA2C4E700088E23 /* ViewController.swift in Sources */,
 				F5F074461FA2C4E700088E23 /* SwiftJSONViewController.swift in Sources */,
 				F5F074501FA2CBFA00088E23 /* YPTasteViewController.swift in Sources */,
@@ -442,6 +462,7 @@
 				F5F074531FA2CDF400088E23 /* YPTasteTableViewCell.swift in Sources */,
 				F5F0743E1FA2C4CC00088E23 /* MJYPDatas.swift in Sources */,
 				F5033CBA1FA1D1ED00124A73 /* AppDelegate.swift in Sources */,
+				F5B0CA7E1FA6D5C800625105 /* YPUITableViewBaseCell.swift in Sources */,
 				F5F0743A1FA2C4CC00088E23 /* MJYPData.swift in Sources */,
 				F5F0743C1FA2C4CC00088E23 /* MJYPMappable.swift in Sources */,
 			);
