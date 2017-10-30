@@ -27,7 +27,7 @@ class YPTasteViewController: UIViewController  {
         self.view.addSubview(self.goodsTableView!)
         
         //开启自动计算高度
-        goodsTableView?.estimatedRowHeight = 260//预估高度，随便设置
+        goodsTableView?.estimatedRowHeight = 44//预估高度，随便设置
         goodsTableView?.rowHeight = UITableViewAutomaticDimension
         
         fetchData()

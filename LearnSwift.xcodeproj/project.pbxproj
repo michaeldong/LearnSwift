@@ -29,6 +29,7 @@
 		F5F074501FA2CBFA00088E23 /* YPTasteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F0744F1FA2CBFA00088E23 /* YPTasteViewController.swift */; };
 		F5F074531FA2CDF400088E23 /* YPTasteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F074521FA2CDF400088E23 /* YPTasteTableViewCell.swift */; };
 		F5F074561FA2E0BC00088E23 /* img.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = F5F074551FA2E0BC00088E23 /* img.jpeg */; };
+		F5F074581FA6C21A00088E23 /* YPUIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F074571FA6C21A00088E23 /* YPUIViewExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +80,7 @@
 		F5F0744F1FA2CBFA00088E23 /* YPTasteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YPTasteViewController.swift; sourceTree = "<group>"; };
 		F5F074521FA2CDF400088E23 /* YPTasteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YPTasteTableViewCell.swift; sourceTree = "<group>"; };
 		F5F074551FA2E0BC00088E23 /* img.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = img.jpeg; sourceTree = "<group>"; };
+		F5F074571FA6C21A00088E23 /* YPUIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YPUIViewExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +151,7 @@
 		F5033CB81FA1D1ED00124A73 /* LearnSwift */ = {
 			isa = PBXGroup;
 			children = (
+				F56862541FA6C180003EA3FA /* extension */,
 				F5F074511FA2CDCB00088E23 /* view */,
 				F5F0742E1FA2C4A300088E23 /* model */,
 				F5F0742F1FA2C4A300088E23 /* viewcontroller */,
@@ -177,6 +180,14 @@
 				F5033CDB1FA1D1ED00124A73 /* Info.plist */,
 			);
 			path = LearnSwiftUITests;
+			sourceTree = "<group>";
+		};
+		F56862541FA6C180003EA3FA /* extension */ = {
+			isa = PBXGroup;
+			children = (
+				F5F074571FA6C21A00088E23 /* YPUIViewExtension.swift */,
+			);
+			path = extension;
 			sourceTree = "<group>";
 		};
 		F5F0742E1FA2C4A300088E23 /* model */ = {
@@ -423,6 +434,7 @@
 				F5F074401FA2C4CC00088E23 /* MJYPGetList.swift in Sources */,
 				F5F074471FA2C4E700088E23 /* ObjectMapperViewController.swift in Sources */,
 				F5F0743F1FA2C4CC00088E23 /* MJYPResult.swift in Sources */,
+				F5F074581FA6C21A00088E23 /* YPUIViewExtension.swift in Sources */,
 				F5F074451FA2C4E700088E23 /* ViewController.swift in Sources */,
 				F5F074461FA2C4E700088E23 /* SwiftJSONViewController.swift in Sources */,
 				F5F074501FA2CBFA00088E23 /* YPTasteViewController.swift in Sources */,

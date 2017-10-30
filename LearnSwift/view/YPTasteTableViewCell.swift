@@ -29,37 +29,41 @@ class YPTasteTableViewCell: UITableViewCell {
     
    fileprivate func constructionView() {
     
-        // add imageview
-        self.contentView.addSubview(goodsImageView)
-        //        goodsImageView.image = UIImage(named:"img.jpeg")
-        goodsImageView.contentMode = .scaleToFill
-        goodsImageView.clipsToBounds = true
-        goodsImageView.snp.makeConstraints { (make) in
-            make.top.equalTo(contentView).offset(10)
-            make.left.equalTo(10)
+        goodsImageView
+        .addhere(toSuperView: self.contentView)
+        .layout { (make) in
+            make.top.equalToSuperview().offset(10)
+            make.left.equalToSuperview().offset(10)
             make.right.equalTo(-10)
             make.height.equalTo(200)
+        }.config { (goodsImageView) in
+            goodsImageView.contentMode = .scaleToFill
+            goodsImageView.clipsToBounds = true
         }
     
-        // add title
-        self.contentView.addSubview(titleLabel)
-        titleLabel.snp.makeConstraints({ (make) in
-            make.top.equalTo(goodsImageView.snp.bottom).offset(10)
-            make.left.equalTo(10)
-            make.right.equalTo(-10)
-        })
-        titleLabel.textAlignment = .center
-        titleLabel.font = UIFont.systemFont(ofSize: 14)
+        titleLabel
+        .addhere(toSuperView: self.contentView)
+        .layout { (make) in
+        make.top.equalTo(goodsImageView.snp.bottom).offset(10)
+        make.left.equalTo(10)
+        make.right.equalTo(-10)
+        }.config { (titleLabel) in
+            titleLabel.textAlignment = .center
+            titleLabel.font = UIFont.systemFont(ofSize:14)
+        }
     
-        // add subtitle
-        self.contentView.addSubview(subtitleLabel)
-        subtitleLabel.snp.makeConstraints({ (make) in
-            make.top.equalTo(titleLabel.snp.bottom).offset(5)
-            make.left.equalTo(10)
-            make.right.equalTo(-10)
-            make.bottom.equalTo(5)
-        })
-        subtitleLabel.textAlignment = .center
-        subtitleLabel.font = UIFont.systemFont(ofSize: 12)
+    
+        subtitleLabel
+            .addhere(toSuperView: self.contentView)
+            .layout { (maker) in
+                maker.top.equalTo(titleLabel.snp.bottom).offset(5)
+                maker.left.equalTo(10)
+                maker.right.equalTo(-10)
+                maker.bottom.equalTo(5)
+            }
+            .config { (subTitleLabel) in
+                subtitleLabel.textAlignment = .center
+                subtitleLabel.font = UIFont.systemFont(ofSize: 12)
+            }
     }
 }
