@@ -36,9 +36,9 @@ class YPTasteTableViewCell: UITableViewCell {
             make.left.equalToSuperview().offset(10)
             make.right.equalTo(-10)
             make.height.equalTo(200)
-        }.config { (goodsImageView) in
-            goodsImageView.contentMode = .scaleToFill
-            goodsImageView.clipsToBounds = true
+        }.config { (imageView) in
+            imageView.contentMode = .scaleToFill
+            imageView.clipsToBounds = true
         }
     
         titleLabel
@@ -47,9 +47,9 @@ class YPTasteTableViewCell: UITableViewCell {
         make.top.equalTo(goodsImageView.snp.bottom).offset(10)
         make.left.equalTo(10)
         make.right.equalTo(-10)
-        }.config { (titleLabel) in
-            titleLabel.textAlignment = .center
-            titleLabel.font = UIFont.systemFont(ofSize:14)
+        }.config { (label) in
+            label.textAlignment = .center
+            label.font = UIFont.systemFont(ofSize:14)
         }
     
     
@@ -61,9 +61,9 @@ class YPTasteTableViewCell: UITableViewCell {
                 maker.right.equalTo(-10)
                 maker.bottom.equalTo(5)
             }
-            .config { (subTitleLabel) in
-                subtitleLabel.textAlignment = .center
-                subtitleLabel.font = UIFont.systemFont(ofSize: 12)
+            .config { (label) in
+                label.textAlignment = .center
+                label.font = UIFont.systemFont(ofSize: 12)
             }
     }
 }
