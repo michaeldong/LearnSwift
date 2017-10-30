@@ -19,7 +19,7 @@ class YPNetworkClient {
 
 extension YPNetworkClient {
     func post(api: YPNetworkAPI,success: @escaping YPNetworkSuccess, failure: @escaping YPNetworkFailure) {
-        Alamofire.request(api.url, method: api.method, parameters: api.parameters, encoding: JSONEncoding(options: []), headers:api.header).responseJSON{ (response) in
+        Alamofire.request(api.url, method: .post, parameters: api.parameters, encoding: JSONEncoding(options: []), headers:api.header).responseJSON{ (response:DataResponse) in
             switch response.result {
             case .success(let value):
                 
@@ -45,7 +45,7 @@ protocol YPNetworkType {
     var url: String { get }
     var method: Alamofire.HTTPMethod { get }
     var header: [String: String]? { get }
-    var parameters: [String: AnyObject]? { get }
+    var parameters: [String: Any]? { get }
 }
 
 enum YPNetworkAPI {
@@ -54,12 +54,12 @@ enum YPNetworkAPI {
 }
 
 extension YPNetworkAPI: YPNetworkType {
-    var baseURL: String { return "https://mi.shopv3.com/" }
+    var baseURL: String { return "https://shopapi.io.mi.com/" }
     
     var url: String {
         switch self {
         case .getList:
-            return "\(baseURL)getList"
+            return "https://shopapi.io.mi.com/app/shopv3/pipe"
         case .getGoods:
             return ""
         }
@@ -73,10 +73,20 @@ extension YPNetworkAPI: YPNetworkType {
             return .post
         }
     }
-    var parameters:[String: AnyObject]? {
+  
+    var parameters:[String: Any]? {
         switch self {
-        case .getList(let type):
-            return ["type": String(type) as AnyObject]
+        case .getList(let psize):
+            return [
+                "GetList": [
+                "model":"Article",
+                "action":"GetList",
+                "parameters": [
+                    "psize":psize,
+                    "list": "pinwei",
+                    "pindex": 0
+                ]
+                ]]
         default:
             return [:]
         }

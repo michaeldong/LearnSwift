@@ -40,27 +40,35 @@ class YPTasteViewController: UIViewController  {
     
     func fetchData() {
 //        goodsData.add("michael")
-        let  parameters: Parameters = [
-            "GetList": [
-                "model":"Article",
-                "action":"GetList",
-                "parameters": [
-                    "psize":20,
-                    "list": "pinwei",
-                    "pindex": 0
-                ]
-            ]
-        ]
+//        let  parameters: Parameters = [
+//            "GetList": [
+//                "model":"Article",
+//                "action":"GetList",
+//                "parameters": [
+//                    "psize":20,
+//                    "list": "pinwei",
+//                    "pindex": 0
+//                ]
+//            ]
+//        ]
 
-        Alamofire.request("https://shopapi.io.mi.com/app/shopv3/pipe", method: .post, parameters: parameters, encoding: JSONEncoding(options: [])).responseJSON { response in
-            print("Request: \(String(describing: response.request))")   // original url request
-            print("Response: \(String(describing: response.response))") // http url response
-            if let json = response.result.value {
-                print("JSON: \(json)") // serialized json response
-                let goodsTasteJson : MJYPMappable = Mapper<MJYPMappable>().map(JSON: json as! [String : Any])!
+//        Alamofire.request("https://shopapi.io.mi.com/app/shopv3/pipe", method: .post, parameters: parameters, encoding: JSONEncoding(options: [])).responseJSON { response in
+//            print("Request: \(String(describing: response.request))")   // original url request
+//            print("Response: \(String(describing: response.response))") // http url response
+//            if let json = response.result.value {
+//                print("JSON: \(json)") // serialized json response
+//                let goodsTasteJson : MJYPMappable = Mapper<MJYPMappable>().map(JSON: json as! [String : Any])!
+//                self.goodsData = goodsTasteJson.result?.getList?.data?.data
+//                self.goodsTableView?.reloadData()
+//            }
+//        }
+        
+        YPNetworkClient.instance.post(api: YPNetworkAPI.getList(type: 20), success: { (response) in
+                let goodsTasteJson : MJYPMappable = Mapper<MJYPMappable>().map(JSON: response as! [String : Any])!
                 self.goodsData = goodsTasteJson.result?.getList?.data?.data
                 self.goodsTableView?.reloadData()
-            }
+        }) { (error) in
+            //
         }
     }
 }
