@@ -16,6 +16,8 @@
 		F5033CDA1FA1D1ED00124A73 /* LearnSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5033CD91FA1D1ED00124A73 /* LearnSwiftUITests.swift */; };
 		F5B0CA7E1FA6D5C800625105 /* YPUITableViewBaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B0CA7B1FA6D5C800625105 /* YPUITableViewBaseCell.swift */; };
 		F5B0CA7F1FA6D5C800625105 /* YPUIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B0CA7D1FA6D5C800625105 /* YPUIViewExtension.swift */; };
+		F5E00EA51FA6FD0A008C86E2 /* YPNetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E00EA41FA6FD0A008C86E2 /* YPNetworkClient.swift */; };
+		F5E00EA81FA70505008C86E2 /* YPBaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E00EA71FA70505008C86E2 /* YPBaseModel.swift */; };
 		F5F0743A1FA2C4CC00088E23 /* MJYPData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F074311FA2C4CC00088E23 /* MJYPData.swift */; };
 		F5F0743C1FA2C4CC00088E23 /* MJYPMappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F074331FA2C4CC00088E23 /* MJYPMappable.swift */; };
 		F5F0743E1FA2C4CC00088E23 /* MJYPDatas.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F074351FA2C4CC00088E23 /* MJYPDatas.swift */; };
@@ -68,6 +70,8 @@
 		F5033CDB1FA1D1ED00124A73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F5B0CA7B1FA6D5C800625105 /* YPUITableViewBaseCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YPUITableViewBaseCell.swift; sourceTree = "<group>"; };
 		F5B0CA7D1FA6D5C800625105 /* YPUIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YPUIViewExtension.swift; sourceTree = "<group>"; };
+		F5E00EA41FA6FD0A008C86E2 /* YPNetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YPNetworkClient.swift; sourceTree = "<group>"; };
+		F5E00EA71FA70505008C86E2 /* YPBaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YPBaseModel.swift; sourceTree = "<group>"; };
 		F5F074311FA2C4CC00088E23 /* MJYPData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MJYPData.swift; sourceTree = "<group>"; };
 		F5F074331FA2C4CC00088E23 /* MJYPMappable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MJYPMappable.swift; sourceTree = "<group>"; };
 		F5F074351FA2C4CC00088E23 /* MJYPDatas.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MJYPDatas.swift; sourceTree = "<group>"; };
@@ -153,6 +157,8 @@
 		F5033CB81FA1D1ED00124A73 /* LearnSwift */ = {
 			isa = PBXGroup;
 			children = (
+				F5E00EA61FA704E1008C86E2 /* YPModel */,
+				F5E00EA31FA6FCF2008C86E2 /* YPNetwork */,
 				F5B0CA791FA6D5C800625105 /* YPView */,
 				F5F074511FA2CDCB00088E23 /* view */,
 				F5F0742E1FA2C4A300088E23 /* model */,
@@ -207,6 +213,22 @@
 				F5B0CA7D1FA6D5C800625105 /* YPUIViewExtension.swift */,
 			);
 			path = extension;
+			sourceTree = "<group>";
+		};
+		F5E00EA31FA6FCF2008C86E2 /* YPNetwork */ = {
+			isa = PBXGroup;
+			children = (
+				F5E00EA41FA6FD0A008C86E2 /* YPNetworkClient.swift */,
+			);
+			path = YPNetwork;
+			sourceTree = "<group>";
+		};
+		F5E00EA61FA704E1008C86E2 /* YPModel */ = {
+			isa = PBXGroup;
+			children = (
+				F5E00EA71FA70505008C86E2 /* YPBaseModel.swift */,
+			);
+			path = YPModel;
 			sourceTree = "<group>";
 		};
 		F5F0742E1FA2C4A300088E23 /* model */ = {
@@ -452,12 +474,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				F5F074401FA2C4CC00088E23 /* MJYPGetList.swift in Sources */,
+				F5E00EA81FA70505008C86E2 /* YPBaseModel.swift in Sources */,
 				F5F074471FA2C4E700088E23 /* ObjectMapperViewController.swift in Sources */,
 				F5F0743F1FA2C4CC00088E23 /* MJYPResult.swift in Sources */,
 				F5B0CA7F1FA6D5C800625105 /* YPUIViewExtension.swift in Sources */,
 				F5F074451FA2C4E700088E23 /* ViewController.swift in Sources */,
 				F5F074461FA2C4E700088E23 /* SwiftJSONViewController.swift in Sources */,
 				F5F074501FA2CBFA00088E23 /* YPTasteViewController.swift in Sources */,
+				F5E00EA51FA6FD0A008C86E2 /* YPNetworkClient.swift in Sources */,
 				F5F074411FA2C4CC00088E23 /* MJYPTop.swift in Sources */,
 				F5F074531FA2CDF400088E23 /* YPTasteTableViewCell.swift in Sources */,
 				F5F0743E1FA2C4CC00088E23 /* MJYPDatas.swift in Sources */,

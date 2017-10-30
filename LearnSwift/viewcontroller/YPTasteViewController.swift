@@ -51,7 +51,7 @@ class YPTasteViewController: UIViewController  {
                 ]
             ]
         ]
-        
+
         Alamofire.request("https://shopapi.io.mi.com/app/shopv3/pipe", method: .post, parameters: parameters, encoding: JSONEncoding(options: [])).responseJSON { response in
             print("Request: \(String(describing: response.request))")   // original url request
             print("Response: \(String(describing: response.response))") // http url response
