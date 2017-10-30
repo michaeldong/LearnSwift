@@ -3,7 +3,7 @@
 //  LearnSwift
 //
 //  Created by michaelxing on 2017/10/30.
-//  Copyright © 2017年 xiaomi. All rights reserved.
+//  Copyright © 2017年 michaelxing. All rights reserved.
 //
 
 // refer this blog: https://blog.nswebfrog.com/2017/10/20/swift-practice-ui-chaining-code/

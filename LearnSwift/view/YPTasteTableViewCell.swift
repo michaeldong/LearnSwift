@@ -3,7 +3,7 @@
 //  LearnSwift
 //
 //  Created by michaelxing on 2017/10/27.
-//  Copyright © 2017年 xiaomi. All rights reserved.
+//  Copyright © 2017年 michaelxing. All rights reserved.
 //
 
 import UIKit

@@ -3,7 +3,7 @@
 //  LearnSwiftUITests
 //
 //  Created by michaelxing on 2017/10/26.
-//  Copyright © 2017年 xiaomi. All rights reserved.
+//  Copyright © 2017年 michaelxing. All rights reserved.
 //
 
 import XCTest

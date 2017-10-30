@@ -2,7 +2,7 @@
 //  MJYPTop.swift
 //
 //  Created by michaelxing on 2017/10/26
-//  Copyright (c) xiaomi. All rights reserved.
+//  Copyright (c) michaelxing. All rights reserved.
 //
 
 import Foundation
