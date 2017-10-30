@@ -309,7 +309,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0910;
 				LastUpgradeCheck = 0910;
-				ORGANIZATIONNAME = xiaomi;
+				ORGANIZATIONNAME = michaelxing;
 				TargetAttributes = {
 					F5033CB51FA1D1ED00124A73 = {
 						CreatedOnToolsVersion = 9.1;
